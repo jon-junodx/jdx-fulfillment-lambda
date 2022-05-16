@@ -1,0 +1,11 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 1024
+      Handler: com.junodx.functions.fulfillment.OrderEventHandler
+      CodeUri: /Users/jonathanmckinney/IdeaProjects/junodx/jdx-fulfillment-lambda
+      Runtime: java11
+      Architectures:
+        - arm64
